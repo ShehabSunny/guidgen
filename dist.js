@@ -27,7 +27,7 @@ window.onload = function(e){
 
 function buttonClicked(){
   document.getElementById("guid").value = guid();
-  alertify.set({ delay: 1500 });
+  alertify.set({ delay: 2000 });
   alertify.success('Copied to clipboard!');
 }
 
