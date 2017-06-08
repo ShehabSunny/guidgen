@@ -1,0 +1,100 @@
+body{
+  background: #ee6e73;
+}
+
+.intro{
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+.brand{
+  margin-bottom: 100px;
+  margin-top: -30px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.content{
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #ee6e73;
+    border-radius: 8px;
+    font-family: 'Bubbler One', sans-serif;
+}
+.content fieldset{
+    border: none;
+}
+.content legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.content label {
+    display: block;
+    margin-bottom: 8px;
+}
+.content input{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: rgb(249, 180, 183);
+    color:#474b4e;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+/*.content input:focus{
+    background: rgb(249, 180, 183);
+}
+.content select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}*/
+
+.button
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #1abc9c;
+    border-width: 1px 1px 1px;
+    margin-bottom: 10px;
+}
+.button:hover
+{
+    background: #109177;
+    border: 1px solid #109177;
+    border-width: 1px 1px 1px;
+}

@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Guid Gen</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script> -->
+    <script src="node_modules\clipboard\dist\clipboard.min.js"></script>
     <script src="./app/app.js"></script>
-
+    <link rel="stylesheet" href="./app/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
   </head>
   <body>
-    <input id="guid" value="" style="width:100%">
-    <button class="button" id="copy-button" data-clipboard-target="#guid" onclick="buttonClicked()">Copy</button>
+    <div class="content">
+      <h2 class="intro">GUID Generator</h2>
+      <h4 class="brand">by AjairaApps</h4>
+      <input id="guid" type="text" value="">
+      <button class="button" id="copy-button" data-clipboard-target="#guid" onclick="buttonClicked()">Copy</button>
+    </div>
+
   </body>
 </html>
