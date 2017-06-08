@@ -46,7 +46,7 @@ body{
     border: none;
     border-radius: 4px;
     font-size: 16px;
-    margin: 0;
+    margin: auto;
     outline: 0;
     padding: 7px;
     width: 100%;
@@ -66,7 +66,7 @@ body{
     font-style: normal;
     width: 100%;
     margin-bottom: 20px;
-
+    max-width: 900px;
 }
 /*.content input:focus{
     background: rgb(249, 180, 183);
@@ -92,6 +92,7 @@ body{
     border-width: 1px 1px 1px;
     margin-bottom: 10px;
     font-family: 'Bubbler One', sans-serif;
+    max-width: 900px;
 }
 .button:hover
 {
