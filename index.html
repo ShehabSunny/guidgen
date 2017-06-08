@@ -2,20 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Guid Gen</title>
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script> -->
+    <title>Guid Generator</title>
     <script src="node_modules\clipboard\dist\clipboard.min.js"></script>
+    <script src="node_modules\alertify\lib\alertify.min.js"></script>
     <script src="./app/app.js"></script>
     <link rel="stylesheet" href="./app/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+
+    <!-- include the core styles for alertify-->
+    <link rel="stylesheet" href="node_modules\alertify\themes\alertify.core.css" />
+    <link rel="stylesheet" href="node_modules\alertify\themes\alertify.default.css" />
+
+    <!-- for github page only as it doesn't support node_modules anymore -->
+    <script src="dist.js"></script>
   </head>
   <body>
     <div class="content">
       <h2 class="intro">GUID Generator</h2>
       <h4 class="brand">by AjairaApps</h4>
-      <input id="guid" type="text" value="">
-      <button class="button" id="copy-button" data-clipboard-target="#guid" onclick="buttonClicked()">Copy</button>
+      <input id="guid" type="text" onClick="this.select();" value="">
+      <button class="button" id="copy-button" data-clipboard-target="#guid" onclick="buttonClicked()">Generate and Copy</button>
     </div>
-
   </body>
 </html>

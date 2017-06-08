@@ -5,6 +5,8 @@ window.onload = function(e){
 
 function buttonClicked(){
   document.getElementById("guid").value = guid();
+  alertify.set({ delay: 1200 });
+  alertify.success('Copied');
 }
 
 function guid() {

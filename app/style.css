@@ -91,6 +91,7 @@ body{
     border: 1px solid #1abc9c;
     border-width: 1px 1px 1px;
     margin-bottom: 10px;
+    font-family: 'Bubbler One', sans-serif;
 }
 .button:hover
 {
