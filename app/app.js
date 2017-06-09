@@ -1,12 +1,12 @@
-window.onload = function(e){
-    document.getElementById("guid").value = guid();
-    new Clipboard('#copy-button');
-}
+import Clipboard from 'clipboard/dist/clipboard.min.js';
+import * as Toastr from 'toastr';
+import 'toastr/build/toastr.css';
 
-function buttonClicked(){
+window.buttonClicked =  function(){
   document.getElementById("guid").value = guid();
-  alertify.set({ delay: 2000 });
-  alertify.success('Copied');
+
+  Toastr.options.timeout = 2000;
+  Toastr.success('Copied to clipboard!');
 }
 
 function guid() {
@@ -17,4 +17,9 @@ function guid() {
   }
   return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
     s4() + '-' + s4() + s4() + s4();
+}
+
+window.onload = function(e){
+    document.getElementById("guid").value = guid();
+    new Clipboard('#copy-button');
 }

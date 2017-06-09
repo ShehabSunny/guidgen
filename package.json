@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "clipboard": "^1.7.1"
+    "alertify": "^0.3.0",
+    "alertify-webpack": "^0.2.1",
+    "clipboard": "^1.7.1",
+    "css-loader": "^0.28.4",
+    "jquery": "^3.2.1",
+    "style-loader": "^0.18.2",
+    "toastr": "^2.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
