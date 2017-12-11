@@ -3,8 +3,27 @@ import * as Toastr from 'toastr';
 import 'toastr/build/toastr.css';
 
 window.buttonClicked =  function(){
-  document.getElementById("guid").value = guid();
 
+  var hyphens = document.getElementById("hyphens").checked;
+  var braces = document.getElementById("braces").checked;
+  var uppcase = document.getElementById("uppcase").checked;
+
+  var guid_value = guid();
+
+  if(braces){
+    guid_value = "{"+guid_value+"}";
+  }
+
+  if(uppcase){
+    guid_value = guid_value.toUpperCase();
+  }
+
+  if(!hyphens){
+    guid_value = guid_value.split("-").join("");
+  }
+
+  document.getElementById("guid").value = guid_value;
+  
   Toastr.options.timeout = 2000;
   Toastr.success('Copied to clipboard!');
 }
@@ -16,7 +35,7 @@ function guid() {
       .substring(1);
   }
   return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-    s4() + '-' + s4() + s4() + s4();
+  s4() + '-' + s4() + s4() + s4();
 }
 
 window.onload = function(e){
