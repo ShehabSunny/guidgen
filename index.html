@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Guid Generator</title>
-    <script src="bundle.js"></script>
-    <link rel="stylesheet" href="./app/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
-  </head>
-  <body>
-    <div class="content">
-      <h2 class="intro">GUID Generator</h2>
-      <h4 class="brand">by AjairaApps</h4>
-      <input id="guid" type="text" onClick="this.select();" value="">
-      <button class="button" id="copy-button" data-clipboard-target="#guid" onclick="buttonClicked()">Generate and Copy</button>
+
+<head>
+  <meta charset="utf-8">
+  <title>Guid Generator</title>
+  <script src="bundle.js"></script>
+  <link rel="stylesheet" href="./app/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+</head>
+
+<body>
+  <div class="content">
+    <h2 class="intro">GUID Generator</h2>
+    <h4 class="brand">by AjairaApps</h4>
+
+    <div class="row">
+      <div class="block">
+        <!-- Hyphens -->
+        <div class="checkbox pretty p-default">
+          <input type="checkbox" id="hyphens" onchange="buttonClicked()"/>
+          <div class="state">
+            <label>Hyphens</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <!-- {} Braces -->
+        <div class="checkbox pretty p-default">
+          <input type="checkbox" id="braces" onchange="buttonClicked()"/>
+          <div class="state">
+            <label>{} Braces</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <!-- Uppcase -->
+        <div class="checkbox pretty p-default">
+          <input type="checkbox" id="uppcase" onchange="buttonClicked()"/>
+          <div class="state">
+            <label>Uppcase</label>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+
+
+    <input id="guid" type="text" onClick="this.select();" value="">
+    <button class="button" id="copy-button" data-clipboard-target="#guid" onclick="buttonClicked()">Generate and Copy</button>
+  </div>
+</body>
+
 </html>

@@ -1,8 +1,8 @@
-body{
-  background: #ee6e73;
+body {
+    background: #ee6e73;
 }
 
-.intro{
+.intro {
     color: #000;
     font-size: 40px;
     text-align: center;
@@ -11,16 +11,30 @@ body{
     font-family: 'Bubbler One', sans-serif;
 }
 
-.brand{
-  margin-bottom: 100px;
-  margin-top: -30px;
-  text-align: center;
-  font-style: normal;
-  width: 100%;
-  font-family: 'Bubbler One', sans-serif;
+.row {
+    width: 100%;
+    /*margin: 0 auto;*/
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.content{
+.block {
+    width: 100px;
+    /*float: left;*/
+    display: inline-block;
+    zoom: 1;
+}
+
+.brand {
+    margin-bottom: 100px;
+    margin-top: -30px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+.content {
     padding: 10px 20px;
     background: #f4f7f8;
     margin: 10px auto;
@@ -29,20 +43,24 @@ body{
     border-radius: 8px;
     font-family: 'Bubbler One', sans-serif;
 }
-.content fieldset{
+
+.content fieldset {
     border: none;
 }
+
 .content legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
+
 .content label {
     display: block;
     margin-bottom: 8px;
 }
-.content input{
+
+.content input {
     font-family: Georgia, "Times New Roman", Times, serif;
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -54,9 +72,9 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     background-color: rgb(249, 180, 183);
-    color:#474b4e;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    color: #474b4e;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
@@ -68,6 +86,8 @@ body{
     margin-bottom: 20px;
     max-width: 900px;
 }
+
+
 /*.content input:focus{
     background: rgb(249, 180, 183);
 }
@@ -76,8 +96,7 @@ body{
     height:35px;
 }*/
 
-.button
-{
+.button {
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
@@ -94,8 +113,8 @@ body{
     font-family: 'Bubbler One', sans-serif;
     max-width: 900px;
 }
-.button:hover
-{
+
+.button:hover {
     background: #109177;
     border: 1px solid #109177;
     border-width: 1px 1px 1px;
